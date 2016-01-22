@@ -58,6 +58,13 @@
           <?php include ('content/storage.php'); ?>
         </div>
       </div>
+      
+      <div class="row">
+         <!-- Users -->
+          <div class="col-lg-12 widget-less-padding">
+              <?php include ('content/users.php'); ?>
+          </div>
+      </div>
 
       <hr />
 

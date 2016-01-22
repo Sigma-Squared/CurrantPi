@@ -27,9 +27,7 @@
             echo "<tr>";
             $rowdata = preg_split('/\s+/', $row);
             foreach ($rowdata as $col) {
-                echo "<td>";
-                echo $col;
-                echo "</td>";
+                echo "<td><p>$col</p></td>";
             }
             echo "</tr>";
         }
