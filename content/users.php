@@ -3,9 +3,6 @@
     /* Uses who to check which users are currently logged in, and from where. */
     $output = shell_exec('who');
     $table_rows = explode(PHP_EOL, $output);
-    //array_shift($table_rows);
-    //print_r($table_rows);
-    //echo "<pre>$output</pre>";
 ?>
 <table class="table table-striped table-hover">
     <thead>
@@ -31,7 +28,6 @@
         foreach ($table_rows as $row) {
             echo "<tr>";
             $rowdata = preg_split('/\s+/', $row);
-           // $rowdata = array($rowdata[0], $rowdata[1], $rowdata[2].$rowdata[3].$rowdata[4], $rowdata[5]);
             for ($i = 0; $i<6; $i++) {
                 $class = "";
                 if (count($rowdata) == 5 && $i == 5) {
