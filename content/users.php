@@ -3,6 +3,7 @@
     /* Uses who to check which users are currently logged in, and from where. */
     $output = shell_exec('who');
     $table_rows = explode(PHP_EOL, $output);
+    array_splice($table_rows, -1, 1); //remove empty last element
 ?>
 <table class="table table-striped table-hover">
     <thead>
