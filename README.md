@@ -10,6 +10,7 @@ Currant Pi will show you current information about your Raspberry Pi's:
  * CPU Load
  * Memory allocation
  * Available storage
+ * Logged in Users
 
 [Check out the Live Demo &rarr;](http://ukube.colinwaddell.com/rpiinfo/) 
 
